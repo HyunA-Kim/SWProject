@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="153.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Period_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="153.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="300.0" />
+      <Label layoutX="13.0" layoutY="14.0" prefHeight="29.0" prefWidth="220.0" text="Please click auto send message cycle">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Period_TextField" layoutX="8.0" layoutY="86.0" prefHeight="23.0" prefWidth="62.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="SaveBtn" layoutX="123.0" layoutY="117.0" mnemonicParsing="false" onAction="#moveSave" prefHeight="23.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="Save">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="CloseBtn" layoutX="206.0" layoutY="117.0" mnemonicParsing="false" onAction="#moveClose" prefHeight="23.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="Close">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="13.0" layoutY="52.0" prefHeight="23.0" prefWidth="57.0" text="Period">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Group layoutX="-2.0" layoutY="6.0" />
+      <CheckBox fx:id="Default_CheckBox" layoutX="78.0" layoutY="56.0" mnemonicParsing="false" onAction="#move_Default" text="default">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="Sec_RadioBtn" layoutX="78.0" layoutY="89.0" mnemonicParsing="false" text="sec">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Min_RadioBtn" layoutX="125.0" layoutY="90.0" mnemonicParsing="false" text="min">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Hour_RadioBtn" layoutX="176.0" layoutY="90.0" mnemonicParsing="false" text="hour">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Day_RadioBtn" layoutX="233.0" layoutY="90.0" mnemonicParsing="false" text="day">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

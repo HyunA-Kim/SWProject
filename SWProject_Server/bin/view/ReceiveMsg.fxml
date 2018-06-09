@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceiveMsg_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="266.0" layoutX="-12.0" layoutY="-10.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="780.0" />
+      <TableView fx:id="Receive_List" layoutX="3.0" layoutY="6.0" prefHeight="200.0" prefWidth="755.0">
+         <columns>
+            <TableColumn fx:id="Program_Column" editable="false" prefWidth="101.0" sortType="DESCENDING" text="Program" />
+            <TableColumn fx:id="ID_Column" editable="false" prefWidth="106.0" sortType="DESCENDING" text="ID" />
+            <TableColumn fx:id="Msg_Column" editable="false" prefWidth="344.0" sortType="DESCENDING" text="Message" />
+            <TableColumn fx:id="Time_Column" prefWidth="204.0" text="Date" />
+         </columns>
+      </TableView>
+      <Button fx:id="closeBtn" layoutX="699.0" layoutY="216.0" mnemonicParsing="false" onAction="#moveClose" prefHeight="23.0" prefWidth="59.0" style="-fx-background-color: #ffffff;" text="Close">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

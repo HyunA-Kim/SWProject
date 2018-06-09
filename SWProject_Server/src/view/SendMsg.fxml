@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="169.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SendMsg_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="167.0" layoutX="3.0" layoutY="2.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="424.0" />
+      <TextField fx:id="textMsg" layoutX="84.0" layoutY="87.0" prefHeight="33.0" prefWidth="331.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label layoutX="13.0" layoutY="40.0" prefHeight="33.0" prefWidth="63.0" text="Client ID">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="textId" layoutX="84.0" layoutY="40.0" prefHeight="33.0" prefWidth="331.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label layoutX="13.0" layoutY="87.0" prefHeight="33.0" prefWidth="63.0" text="Message">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="sendBtn" layoutX="293.0" layoutY="133.0" mnemonicParsing="false" onAction="#moveSend" prefHeight="26.0" prefWidth="53.0" text="Send">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="closeBtn" layoutX="362.0" layoutY="133.0" mnemonicParsing="false" onAction="#moveClose" text="Close">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label layoutX="13.0" layoutY="14.0" text="Send message from Server to Client">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

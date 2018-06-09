@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageDetail_Controller">
+   <children>
+      <TableView prefHeight="362.0" prefWidth="600.0">
+         <columns>
+            <TableColumn prefWidth="130.0" text="작업프로그램" />
+            <TableColumn minWidth="0.0" prefWidth="100.0" text="날짜" />
+            <TableColumn prefWidth="104.0" text="호스트" />
+            <TableColumn prefWidth="265.0" text="메세지" />
+         </columns>
+      </TableView>
+      <Button fx:id="closeBtn" layoutX="526.0" layoutY="365.0" mnemonicParsing="false" onAction="#moveClose" prefHeight="34.0" prefWidth="66.0" text="닫기">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

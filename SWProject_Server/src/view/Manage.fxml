@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#88f8f6" height="88.0" stroke="#101111" strokeType="INSIDE" width="467.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#87f8f6" height="88.0" layoutY="88.0" stroke="#101111" strokeType="INSIDE" width="467.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e6eb" height="88.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="467.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b3c4d3" height="35.0" layoutY="264.0" stroke="BLACK" strokeType="INSIDE" width="467.0" />
+      <Label layoutX="38.0" layoutY="26.0" text="Tina">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="111.0" text="Net-Back-Up">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="199.0" text="Total">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Circle fx:id="ColorDot" fill="#21ff76" layoutX="171.0" layoutY="220.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="TinaLbl" layoutX="305.0" layoutY="34.0" text="null" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="NetLbl" layoutX="305.0" layoutY="119.0" text="null" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="TotalLbl" layoutX="305.0" layoutY="207.0" text="null" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Group>
+         <children>
+            <RadioButton fx:id="TotalBtn" layoutX="398.0" layoutY="208.0" mnemonicParsing="false" onAction="#CheckTotal" />
+            <RadioButton fx:id="TinaBtn" layoutX="398.0" layoutY="35.0" mnemonicParsing="false" onAction="#CheckTina" />
+            <RadioButton fx:id="NetBtn" layoutX="398.0" layoutY="120.0" mnemonicParsing="false" onAction="#CheckNet" />
+         </children>
+      </Group>
+      <Button fx:id="BeforeBtn" layoutX="3.0" layoutY="269.0" mnemonicParsing="false" onAction="#moveBefore" style="-fx-border-radius: 5;" text="이전화면">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="NextBtn" layoutX="414.0" layoutY="269.0" mnemonicParsing="false" onAction="#moveNext" style="-fx-border-radius: 5;" text="선택">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

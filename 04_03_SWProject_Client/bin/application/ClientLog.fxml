@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="250.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientLog_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="560.0" layoutX="-2.0" layoutY="-2.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="650.0" />
+      <TableView fx:id="Log_List" layoutX="7.0" layoutY="39.0" prefHeight="471.0" prefWidth="633.0">
+         <columns>
+            <TableColumn fx:id="Num_Column" editable="false" prefWidth="53.0" sortType="DESCENDING" text="No." />
+            <TableColumn fx:id="LogDate_Column" editable="false" prefWidth="169.0" sortType="DESCENDING" text="Date" />
+            <TableColumn fx:id="LogMsg_Column" editable="false" prefWidth="410.0" sortType="DESCENDING" text="Contents" />
+         </columns>
+      </TableView>
+      <Button fx:id="closeBtn" layoutX="577.0" layoutY="518.0" mnemonicParsing="false" onAction="#moveClose" prefHeight="23.0" prefWidth="59.0" style="-fx-background-color: #ffffff;" text="닫기">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="14.0" text="Log File sort with number/ Date/ Contents" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="67.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Send_Message_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="67.0" layoutX="1.0" layoutY="3.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="503.0" />
+      <TextField fx:id="textMsg" layoutX="118.0" layoutY="22.0" prefHeight="29.0" prefWidth="269.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="18.0" layoutY="20.0" prefHeight="33.0" prefWidth="108.0" text="Message">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendBtn" layoutX="400.0" layoutY="23.0" mnemonicParsing="false" onAction="#moveSend" prefHeight="17.0" prefWidth="78.0" style="-fx-background-color: #ffffff;" text="Send">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

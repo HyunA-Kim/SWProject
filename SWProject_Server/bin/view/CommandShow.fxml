@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CommandShow_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="248.0" layoutX="6.0" layoutY="8.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="487.0" />
+      <TextArea fx:id="Command_TextArea" layoutX="17.0" layoutY="14.0" prefHeight="231.0" prefWidth="467.0" style="-fx-border-radius: 12;" />
+      <Button fx:id="closeBtn" layoutX="432.0" layoutY="262.0" mnemonicParsing="false" onAction="#moveClose" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: #1EDDFF; -fx-border-color: #1478FF; -fx-border-radius: 5;" text="닫기" />
+   </children>
+</AnchorPane>

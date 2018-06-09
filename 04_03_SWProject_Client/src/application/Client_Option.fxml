@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="119.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientOption_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="171.0" layoutX="-4.0" layoutY="-4.0" stroke="GAINSBORO" strokeType="OUTSIDE" strokeWidth="2.0" width="289.0" />
+      <Label layoutX="14.0" layoutY="43.0" prefHeight="29.0" prefWidth="186.0" text="Pick up the color what you want">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="SaveBtn" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" onAction="#moveSave" prefHeight="23.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="Save">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ChangeBtn" layoutX="102.0" layoutY="132.0" mnemonicParsing="false" onAction="#moveChange" prefHeight="23.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="Change">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="CloseBtn" layoutX="188.0" layoutY="132.0" mnemonicParsing="false" onAction="#moveClose" prefHeight="23.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="Close">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <ColorPicker fx:id="ColorBtn" layoutX="14.0" layoutY="82.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="186.0" text="Background Color">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
