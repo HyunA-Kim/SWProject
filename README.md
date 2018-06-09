@@ -6,4 +6,6 @@ Each Program will be start individual. We can connect each other, file send, and
 
 This storage source code of the our project.
 
-You can run with server main file. client main file.
+You can run with server main file and client main file.
+
+Thank you very much to read this files.
